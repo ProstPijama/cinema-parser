@@ -1,1 +1,1 @@
-from core.py import Cinemaparser
+from .core import Cinemaparser
