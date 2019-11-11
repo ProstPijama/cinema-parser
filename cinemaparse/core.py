@@ -5,7 +5,7 @@ import requests as r
 
 class Cinemaparser:
     """Something about cinema"""
-    def __init__(self, city):
+    def __init__(self, city="msk"):
         """This function saves information about city name"""
         self.city = city
         self.content = None
@@ -30,7 +30,3 @@ class Cinemaparser:
 
     def get_film_nearest_session(self, film):
         """This function get fil nearest session"""
-        
-CI_MO = Cinemaparser('msk')
-CI_MO.extract_raw_content()
-CI_MO.get_films_list()
